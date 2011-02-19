@@ -1,20 +1,25 @@
-Nicely formats debugging output in Textmate for BDD people who occasionally need to do 
+Nicely formats debugging puts and pp statements in Textmate (for Rspec).
 
-    puts MyObject.inspect
-    pp MyClass.last
-    puts "What the hell is going on?"
+Sometimes you need to do things like this:
+
+    puts "Let's see what's going on here..."
+    pp MyClass.new
+    
     
 And usually see just this on the screen:
 
+    Let's see what's going on here...
     #
-    #
-    What the hell is going on?
+    
+You can right-click to inspect element, but that's a pain.
 
 Drop the textmate_puts_helper.rb in your spec folder
 
     require 'textmate_puts_helper'
     
-Watch as your objects appear as you would normally expect.
+Watch as your objects appear as you would expect:
+
+![Rspec debugging](https://img.skitch.com/20110219-ecx1pefh5eqtxxibcispcjikqg.png)
 
 If you define a method 'pp' on any class instance, this will be used when using 'pp'.
 
