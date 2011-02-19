@@ -2,13 +2,13 @@ Nicely formats debugging puts and pp statements in Textmate (for Rspec).
 
 Sometimes you need to do things like this:
 
-    puts "Let's see what's going on here..."
+    puts "Let's see what is going on here..."
     pp MyClass.new
     
     
 And usually see just this on the screen:
 
-    Let's see what's going on here...
+    Let's see what is going on here...
     #
     
 You can right-click to inspect element, but that's a pain.
